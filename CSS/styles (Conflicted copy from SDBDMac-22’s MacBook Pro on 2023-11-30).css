@@ -13,7 +13,7 @@ font-family: 'Roboto Slab', serif;
 @import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100;200;400;900&display=swap');
 
 /* CSS Reset */
-body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside {
+body, header, nav, main, footer, h1, div, img, ul {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -27,11 +27,6 @@ body {
 img {
 	max-width:100%;
 	display: block;
-}
-
-/* Style rule for box sizing applies to all elements */
-* {
-	box-sizing: border-box;
 }
 
 /* Style rules for mobile viewport */
@@ -95,33 +90,6 @@ main {
 	font-family: 'Roboto Slab', serif;
 }
 
-.mobile h3 {
-	text-shadow: 5px 5px 8px #ccc;
-}
-
-article {
-	padding: 2%;
-}
-
-article h3 {
-	text-align: center;
-}
-
-article img {
-	margin: 0 auto;
-}
-
-article ul {
-	margin-left: 10%;
-}
-
-article:nth-of-type(2) {
-	background-color: rgba(204,204,204,0.6);
-	border-radius: 15px;
-}
-
-
-
 .tel-link {
 	background-color: #404040; 
 	padding: 2%;
@@ -136,25 +104,6 @@ article:nth-of-type(2) {
 	text-decoration: none;
 	font-size: 1.5em;
 	display: block;
-}
-
-.frame {
-	position: relative;
-	max-width: 450px;
-	margin: 2% auto;
-}
-
-.pic-text {
-	position: absolute;
-	bottom: 0;
-	background: rgba(0, 0, 0, 0.5);
-	color: #fff;
-	width: 100%;
-	padding: 20px;
-	text-align: center;
-	font-family: Verdana, Arial, sans-serif;
-	font-size: 1.5em;
-	font-weight: bold;
 }
 
 .hours {
@@ -224,8 +173,7 @@ article:nth-of-type(2) {
 	clear: left;
 	border-top: 1px solid #000;
 	border-bottom: 1px solid #000;
-	background: linear-gradient(to right, #ccc, #fff);
-	/*background-color: #f2f2f2;*/
+	background-color: #f2f2f2;
 	padding: 1% 2%;
 }
 
@@ -278,11 +226,6 @@ article:nth-of-type(2) {
 		padding: 0.5em 1em;
 	}
 	
-	nav li a:hover {
-		color: #000;
-		background-color: #fff;
-	}
-	
 	/* Desktop Viewport: Style Rules for main content */
 	main {
 		clear: both;
@@ -290,31 +233,6 @@ article:nth-of-type(2) {
 	
 	main h1 {
 		font-size: 1.8em;
-	}
-	
-	article h3 {
-		font-size: 1.75em;
-	}
-	
-	.pic-text {
-		font-size: 1.5em;
-		padding: 20%;
-	}
-	
-	aside {
-		text-align: center;
-		font-size: 1.25em;
-		font-style: italic;
-		font-weight: bold;
-		padding: 2%;
-		background-color: rgba(204 ,204 ,204, 0.6);
-		box-shadow: 5px 5px 8px #000;
-		text-shadow: 5px 5px 5px #b3b3b3;
-		border-radius: 0 15px;
-	}
-	
-	.grid-item4 {
-		grid-column: 1 / span 3;
 	}
 	
 	#weights, #cardio, #training {
@@ -326,8 +244,6 @@ article:nth-of-type(2) {
 	#exercises {
 		clear: left;
 	}
-	
-	a:active, a:visited, a:link, a:hover
 	
  /* Closing Desktop Viewport Media Query */
 	
